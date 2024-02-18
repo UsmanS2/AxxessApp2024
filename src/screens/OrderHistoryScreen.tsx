@@ -5,6 +5,7 @@ import {
   Text,
   TouchableOpacity,
   View,
+  Image
 } from 'react-native';
 import React, {useState} from 'react';
 import {useStore} from '../store/store';
@@ -60,12 +61,16 @@ const OrderHistoryScreen = ({navigation}: any) => {
         <View
           style={[styles.ScrollViewInnerView, {marginBottom: tabBarHeight}]}>
           <View style={styles.ItemContainer}>
-            <HeaderBar title="Order History" />
+            <HeaderBar title="Medical Charts" />
 
             {OrderHistoryList.length == 0 ? (
               <EmptyListAnimation title={'No Order History'} />
             ) : (
               <View style={styles.ListItemContainer}>
+
+<Image 
+        source={require('../assets/pics/chart1.png')}/>
+
                 {OrderHistoryList.map((data: any, index: any) => (
                   <OrderHistoryCard
                     key={index.toString()}
@@ -98,7 +103,7 @@ const OrderHistoryScreen = ({navigation}: any) => {
 const styles = StyleSheet.create({
   ScreenContainer: {
     flex: 1,
-    backgroundColor: COLORS.primaryBlackHex,
+    backgroundColor: COLORS.periwinkle,
   },
   LottieAnimation: {
     height: 250,
