@@ -71,24 +71,24 @@ const DetailsScreen = ({navigation, route}: any) => {
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.ScrollViewFlex}>
-        EnableBackHandler={true}
+        
 
 
-        {/* <ImageBackgroundInfo
+        <ImageBackgroundInfo
           EnableBackHandler={true}
           imagelink_portrait={ItemOfIndex.imagelink_portrait}
-          type={ItemOfIndex.type}
-          id={ItemOfIndex.id}
-          favourite={ItemOfIndex.favourite}
-          name={ItemOfIndex.name}
-          special_ingredient={ItemOfIndex.special_ingredient}
-          ingredients={ItemOfIndex.ingredients}
+          type=""
+          id=""
+          favourite={true}
+          name=""
+          special_ingredient=""
+          ingredients=""
           average_rating={ItemOfIndex.average_rating}
           ratings_count={ItemOfIndex.ratings_count}
           roasted={ItemOfIndex.roasted}
           BackHandler={BackHandler}
           ToggleFavourite={ToggleFavourite}
-        /> */}
+        />
         <View style={styles.FooterInfoArea}>
           <Text style={styles.InfoTitle}>Description</Text>
           <Text style={styles.DescriptionText}>

@@ -6,6 +6,7 @@ import {
   StatusBar,
   ScrollView,
   TouchableOpacity,
+  Image
 } from 'react-native';
 import {useStore} from '../store/store';
 import {useBottomTabBarHeight} from '@react-navigation/bottom-tabs';
@@ -25,8 +26,16 @@ const FavoritesScreen = ({navigation}: any) => {
     favourite ? deleteFromFavoriteList(type, id) : addToFavoriteList(type, id);
   };
   return (
-    <View style={styles.ScreenContainer}>
-      <StatusBar backgroundColor={COLORS.primaryBlackHex} />
+<View style={styles.ScreenContainer}>
+    <>
+    
+    <Image 
+        source={require('../assets/pics/mobilityimg.png')}
+        />
+</>
+
+    
+      {/* <StatusBar backgroundColor={COLORS.primaryBlackHex} />
 
       <ScrollView
         showsVerticalScrollIndicator={false}
@@ -70,7 +79,7 @@ const FavoritesScreen = ({navigation}: any) => {
             )}
           </View>
         </View>
-      </ScrollView>
+      </ScrollView> */}
     </View>
   );
 };
@@ -79,6 +88,8 @@ const styles = StyleSheet.create({
   ScreenContainer: {
     flex: 1,
     backgroundColor: COLORS.primaryBlackHex,
+    justifyContent: 'center',
+    
   },
   ScrollViewFlex: {
     flexGrow: 1,

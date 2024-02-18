@@ -19,16 +19,16 @@ import CustomIcon from './CustomIcon';
 
 interface ImageBackgroundInfoProps {
   EnableBackHandler: boolean;
-  imagelink_portrait: ImageProps;
-  type: string;
-  id: string;
-  favourite: boolean;
-  name: string;
-  special_ingredient: string;
-  ingredients: string;
-  average_rating: number;
-  ratings_count: string;
-  roasted: string;
+  imagelink_portrait: any;
+  type: any;
+  id: any;
+  favourite: any;
+  name: any;
+  special_ingredient: any;
+  ingredients: any;
+  average_rating: any;
+  ratings_count: any;
+  roasted: any;
   BackHandler?: any;
   ToggleFavourite: any;
 }
