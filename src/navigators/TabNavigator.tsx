@@ -19,13 +19,13 @@ const TabNavigator = () => {
         headerShown: false,
         tabBarShowLabel: false,
         tabBarStyle: styles.tabBarStyle,
-        tabBarBackground: () => (
-          <BlurView
-            overlayColor=""
-            blurAmount={15}
-            style={styles.BlurViewStyles}
-          />
-        ),
+        // tabBarBackground: () => (
+        //   <BlurView
+        //     overlayColor="rgba(0, 0, 0, 0)"
+        //     blurAmount={0}
+        //     style={styles.BlurViewStyles}
+        //   />
+        // ),
       }}>
       <Tab.Screen
         name="Home"
@@ -93,11 +93,12 @@ const styles = StyleSheet.create({
     position: 'absolute',
     backgroundColor: COLORS.mustard,
     borderTopWidth: 0,
-    elevation: 0,
+    //elevation: 1,
     borderTopColor: 'transparent',
   },
   BlurViewStyles: {
     position: 'absolute',
+    backgroundColor: COLORS.mustard,
     top: 0,
     bottom: 0,
     left: 0,
