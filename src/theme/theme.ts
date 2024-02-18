@@ -47,6 +47,9 @@ interface Color {
   secondaryBlackRGBA: string;
   mustard: string;
   blackBean: string;
+  spaceCadet: string;
+  tropicalIndigo: string;
+  periwinkle: string;
 }
 
 export const COLORS: Color = {
@@ -63,7 +66,10 @@ export const COLORS: Color = {
   primaryBlackRGBA: 'rgba(12,15,20,0.5)',
   secondaryBlackRGBA: 'rgba(0,0,0,0.7)',
   mustard: '#FFD447',
-  blackBean: '#401800'
+  blackBean: '#401800',
+  spaceCadet: '#111D4A',
+  tropicalIndigo: '#8B85C1',
+  periwinkle: '#D4CDF4'
 };
 
 interface FontFamily {
