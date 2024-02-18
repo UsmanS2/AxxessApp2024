@@ -8,6 +8,7 @@ import FavoritesScreen from '../screens/FavoritesScreen';
 import CartScreen from '../screens/CartScreen';
 import OrderHistoryScreen from '../screens/OrderHistoryScreen';
 import CustomIcon from '../components/CustomIcon';
+import briefCaseImg from '../assets/icons/briefCaseExp';
 
 const Tab = createBottomTabNavigator();
 
@@ -47,7 +48,7 @@ const TabNavigator = () => {
         options={{
           tabBarIcon: ({focused, color, size}) => (
             <CustomIcon
-              name="cart"
+              name="folder-plus"
               size={25}
               color={
                 focused ? COLORS.tropicalIndigo : COLORS.blackBean
@@ -61,7 +62,7 @@ const TabNavigator = () => {
         options={{
           tabBarIcon: ({focused, color, size}) => (
             <CustomIcon
-              name="like"
+              name="wrench"
               size={25}
               color={
                 focused ? COLORS.tropicalIndigo : COLORS.blackBean

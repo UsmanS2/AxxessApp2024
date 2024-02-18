@@ -5,6 +5,9 @@ import TabNavigator from './src/navigators/TabNavigator';
 import DetailsScreen from './src/screens/DetailsScreen';
 import PaymentScreen from './src/screens/PaymentScreen';
 import SplashScreen from 'react-native-splash-screen';
+import { useState } from "react";
+import LoginPage from './src/screens/LoginScreen';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -12,8 +15,16 @@ const App = () => {
   useEffect(() => {
     SplashScreen.hide();
   }, []);
+  const [yesPressed, setYesPressed] = useState(false);
   return (
+
     <NavigationContainer>
+      {yesPressed ? (
+          <>
+            <LoginPage />
+          </>
+           ) : (
+            <>
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen
           name="Tab"
@@ -28,7 +39,9 @@ const App = () => {
           component={PaymentScreen}
           options={{animation: 'slide_from_bottom'}}></Stack.Screen>
       </Stack.Navigator>
-    </NavigationContainer>
+      </>
+           )}
+           </NavigationContainer>
   );
 };
 
