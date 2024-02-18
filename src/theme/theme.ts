@@ -50,6 +50,7 @@ interface Color {
   spaceCadet: string;
   tropicalIndigo: string;
   periwinkle: string;
+  lightpurple: string;
 }
 
 export const COLORS: Color = {
@@ -69,7 +70,8 @@ export const COLORS: Color = {
   blackBean: '#401800',
   spaceCadet: '#111D4A',
   tropicalIndigo: '#8B85C1',
-  periwinkle: '#D4CDF4'
+  periwinkle: '#D4CDF4',
+  lightpurple: 'F4EDFF'
 };
 
 interface FontFamily {
