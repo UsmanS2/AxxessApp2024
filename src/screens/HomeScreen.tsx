@@ -261,11 +261,11 @@ const HomeScreen = ({navigation}: any) => {
           }}
         />
 
-        <Text style={styles.CoffeeBeansTitle}>Coffee Beans</Text>
+        {/* <Text style={styles.CoffeeBeansTitle}>Coffee Beans</Text> */}
 
         {/* Beans Flatlist */}
 
-        <FlatList
+        {/* <FlatList
           horizontal
           showsHorizontalScrollIndicator={false}
           data={BeanList}
@@ -298,8 +298,8 @@ const HomeScreen = ({navigation}: any) => {
                 />
               </TouchableOpacity>
             );
-          }}
-        />
+          }} */}
+        {/* /> */}
       </ScrollView>
     </View>
   );
