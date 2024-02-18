@@ -227,7 +227,7 @@ const HomeScreen = ({navigation}: any) => {
           horizontal
           ListEmptyComponent={
             <View style={styles.EmptyListContainer}>
-              <Text style={styles.CategoryText}>No Coffee Available</Text>
+              <Text style={styles.CategoryText}>No Info Available</Text>
             </View>
           }
           showsHorizontalScrollIndicator={false}
