@@ -123,7 +123,7 @@ const HomeScreen = ({navigation}: any) => {
 
   return (
     <View style={styles.ScreenContainer}>
-      <StatusBar backgroundColor={COLORS.primaryBlackHex} />
+      <StatusBar backgroundColor={COLORS.tropicalIndigo} />
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.ScrollViewFlex}>
@@ -308,7 +308,7 @@ const HomeScreen = ({navigation}: any) => {
 const styles = StyleSheet.create({
   ScreenContainer: {
     flex: 1,
-    backgroundColor: COLORS.primaryBlackHex,
+    backgroundColor: COLORS.periwinkle,
   },
   ScrollViewFlex: {
     flexGrow: 1,
@@ -316,14 +316,14 @@ const styles = StyleSheet.create({
   ScreenTitle: {
     fontSize: FONTSIZE.size_28,
     fontFamily: FONTFAMILY.poppins_semibold,
-    color: COLORS.primaryWhiteHex,
+    color: COLORS.blackBean,
     paddingLeft: SPACING.space_30,
   },
   InputContainerComponent: {
     flexDirection: 'row',
     margin: SPACING.space_30,
     borderRadius: BORDERRADIUS.radius_20,
-    backgroundColor: COLORS.primaryDarkGreyHex,
+    backgroundColor: COLORS.mustard,
     alignItems: 'center',
   },
   InputIcon: {
@@ -334,7 +334,7 @@ const styles = StyleSheet.create({
     height: SPACING.space_20 * 3,
     fontFamily: FONTFAMILY.poppins_medium,
     fontSize: FONTSIZE.size_14,
-    color: COLORS.primaryWhiteHex,
+    color: COLORS.blackBean,
   },
   CategoryScrollViewStyle: {
     paddingHorizontal: SPACING.space_20,
@@ -349,14 +349,14 @@ const styles = StyleSheet.create({
   CategoryText: {
     fontFamily: FONTFAMILY.poppins_semibold,
     fontSize: FONTSIZE.size_16,
-    color: COLORS.primaryLightGreyHex,
+    color: COLORS.lightpurple,
     marginBottom: SPACING.space_4,
   },
   ActiveCategory: {
     height: SPACING.space_10,
     width: SPACING.space_10,
     borderRadius: BORDERRADIUS.radius_10,
-    backgroundColor: COLORS.primaryOrangeHex,
+    backgroundColor: COLORS.mustard,
   },
   FlatListContainer: {
     gap: SPACING.space_20,
@@ -374,7 +374,7 @@ const styles = StyleSheet.create({
     marginLeft: SPACING.space_30,
     marginTop: SPACING.space_20,
     fontFamily: FONTFAMILY.poppins_medium,
-    color: COLORS.secondaryLightGreyHex,
+    color: COLORS.blackBean,
   },
 });
 

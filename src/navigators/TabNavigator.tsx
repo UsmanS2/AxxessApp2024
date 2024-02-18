@@ -36,7 +36,7 @@ const TabNavigator = () => {
               name="home"
               size={25}
               color={
-                focused ? COLORS.primaryOrangeHex : COLORS.primaryLightGreyHex
+                focused ? COLORS.tropicalIndigo : COLORS.blackBean
               }
             />
           ),
@@ -50,7 +50,7 @@ const TabNavigator = () => {
               name="cart"
               size={25}
               color={
-                focused ? COLORS.primaryOrangeHex : COLORS.primaryLightGreyHex
+                focused ? COLORS.tropicalIndigo : COLORS.blackBean
               }
             />
           ),
@@ -64,7 +64,7 @@ const TabNavigator = () => {
               name="like"
               size={25}
               color={
-                focused ? COLORS.primaryOrangeHex : COLORS.primaryLightGreyHex
+                focused ? COLORS.tropicalIndigo : COLORS.blackBean
               }
             />
           ),
@@ -78,7 +78,7 @@ const TabNavigator = () => {
               name="bell"
               size={25}
               color={
-                focused ? COLORS.primaryOrangeHex : COLORS.primaryLightGreyHex
+                focused ? COLORS.tropicalIndigo : COLORS.blackBean
               }
             />
           ),
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
   tabBarStyle: {
     height: 80,
     position: 'absolute',
-    backgroundColor: COLORS.primaryBlackRGBA,
+    backgroundColor: COLORS.mustard,
     borderTopWidth: 0,
     elevation: 0,
     borderTopColor: 'transparent',
