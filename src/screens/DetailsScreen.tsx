@@ -67,11 +67,14 @@ const DetailsScreen = ({navigation, route}: any) => {
 
   return (
     <View style={styles.ScreenContainer}>
-      <StatusBar backgroundColor={COLORS.primaryBlackHex} />
+      <StatusBar backgroundColor={COLORS.tropicalIndigo} />
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.ScrollViewFlex}>
-        <ImageBackgroundInfo
+        EnableBackHandler={true}
+
+
+        {/* <ImageBackgroundInfo
           EnableBackHandler={true}
           imagelink_portrait={ItemOfIndex.imagelink_portrait}
           type={ItemOfIndex.type}
@@ -85,9 +88,14 @@ const DetailsScreen = ({navigation, route}: any) => {
           roasted={ItemOfIndex.roasted}
           BackHandler={BackHandler}
           ToggleFavourite={ToggleFavourite}
-        />
-
+        /> */}
         <View style={styles.FooterInfoArea}>
+          <Text style={styles.InfoTitle}>Description</Text>
+          <Text style={styles.DescriptionText}>
+                Here you can see all of your Medical Statistics
+              </Text>
+          </View>
+        {/* <View style={styles.FooterInfoArea}>
           <Text style={styles.InfoTitle}>Description</Text>
           {fullDesc ? (
             <TouchableWithoutFeedback
@@ -144,8 +152,8 @@ const DetailsScreen = ({navigation, route}: any) => {
               </TouchableOpacity>
             ))}
           </View>
-        </View>
-        <PaymentFooter
+        </View> */}
+        {/* <PaymentFooter
           price={price}
           buttonTitle="Add to Cart"
           buttonPressHandler={() => {
@@ -160,7 +168,7 @@ const DetailsScreen = ({navigation, route}: any) => {
               price: price,
             });
           }}
-        />
+        /> */}
       </ScrollView>
     </View>
   );
@@ -169,7 +177,7 @@ const DetailsScreen = ({navigation, route}: any) => {
 const styles = StyleSheet.create({
   ScreenContainer: {
     flex: 1,
-    backgroundColor: COLORS.primaryBlackHex,
+    backgroundColor: COLORS.periwinkle,
   },
   ScrollViewFlex: {
     flexGrow: 1,

@@ -90,7 +90,7 @@ const HomeScreen = ({navigation}: any) => {
     });
     setCategoryIndex({index: 0, category: categories[0]});
     setSortedCoffee([...CoffeeList]);
-    setSearchText('');
+    setSearchText('Ask a question...');
   };
 
   const CoffeCardAddToCart = ({
@@ -131,7 +131,7 @@ const HomeScreen = ({navigation}: any) => {
         <HeaderBar />
 
         <Text style={styles.ScreenTitle}>
-          Find the best{'\n'}coffee for you
+          Welcome John Doe!
         </Text>
 
         {/* Search Input */}
@@ -143,7 +143,7 @@ const HomeScreen = ({navigation}: any) => {
             }}>
             <CustomIcon
               style={styles.InputIcon}
-              name="search"
+              name="Ask a question..."
               size={FONTSIZE.size_18}
               color={
                 searchText.length > 0
@@ -153,7 +153,7 @@ const HomeScreen = ({navigation}: any) => {
             />
           </TouchableOpacity>
           <TextInput
-            placeholder="Find Your Coffee..."
+            placeholder="Ask a question..."
             value={searchText}
             onChangeText={text => {
               setSearchText(text);
